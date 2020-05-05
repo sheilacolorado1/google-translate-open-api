@@ -1,5 +1,5 @@
 {
-  "name": "google-translate-open-api-proxy-proxy-proxy-proxy-proxy",
+  "name": "google-translate-open-api-proxy",
   "version": "1.3.2",
   "description": "A free and unlimited API for Google Translate（contains single and multiple） 💵🚫",
   "main": "dist/index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hua1995116/google-translate-open-api-proxy-proxy-proxy-proxy-proxy.git"
+    "url": "git+https://github.com/sheilacolorado1/google-translate-open-api.git"
   },
   "keywords": [
     "google",
@@ -24,9 +24,9 @@
   "author": "hua1995116 <qiufneghyf@gmail.com> (https://github.com/hua1995116)",
   "license": "Apache License",
   "bugs": {
-    "url": "https://github.com/hua1995116/google-translate-open-api-proxy-proxy-proxy-proxy-proxy/issues"
+    "url": "https://github.com/sheilacolorado1/google-translate-open-api/issues"
   },
-  "homepage": "https://github.com/hua1995116/google-translate-open-api-proxy-proxy-proxy-proxy-proxy#readme",
+  "homepage": "https://github.com/sheilacolorado1/google-translate-open-api#readme",
   "devDependencies": {
     "@types/mocha": "^5.2.7",
     "@types/node": "^12.7.4",
