@@ -81,7 +81,7 @@ function updateTKK(opts) {
             resolve();
         } else {
             axios({
-                url: 'https://translate.google.' + opts.tld,
+                url: 'https://climateanywhere.herokuapp.com/https://translate.google.' + opts.tld,
                 proxy: opts.proxy,
             }).then(function (res) {
                 var matches = res.data.match(/tkk:\s?'(.+?)'/i);

@@ -56,12 +56,12 @@ function handletranslate(data: string[], extra: Options): Promise<any> {
         },
         data: arrayStringify(data),
         url: '/translate_a/t',
-        baseURL: `https://translate.googleapis.com`,
+        baseURL: `https://climateanywhere.herokuapp.com/https://translate.googleapis.com`,
         params: query,
         proxy: extra.proxy || false,
         ...(extra.config)
       };
-      let browersUrl = 'https://cors-anywhere.herokuapp.com/';
+      let browersUrl = 'https://climateanywhere.herokuapp.com/';
       if (extra.browersUrl) {
         browersUrl = extra.browersUrl;
       }
