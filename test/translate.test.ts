@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import translate, { parseMultiple } from '../src/index';
 import { createProxy } from './help'
 
-describe('google-translate-open-api', () => {
+describe('google-translate-open-api-proxy', () => {
   it('not support from', async() => {
     try {
       const result = await translate(`I'm fine.`, {

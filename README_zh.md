@@ -1,12 +1,12 @@
-# google-translate-open-api
+# google-translate-open-api-proxy
 一个免费无限制的谷歌翻译api（支持单段文本以及多段文本同时翻译） 💵🚫
 
 <p align="center">
-    <a href="https://travis-ci.org/hua1995116/google-translate-open-api"><img src="https://travis-ci.org/hua1995116/google-translate-open-api.svg?branch=master" /></a>
-    <a href="https://codecov.io/gh/hua1995116/google-translate-open-api"><img src="https://codecov.io/gh/hua1995116/google-translate-open-api/branch/master/graph/badge.svg" /></a>
-    <a href="https://npmcharts.com/compare/google-translate-open-api?minimal=true" rel="nofollow"><img src="https://img.shields.io/npm/dm/google-translate-open-api.svg" style="max-width:100%;"></a>
-    <a href="https://www.npmjs.com/package/google-translate-open-api" rel="nofollow"><img src="https://img.shields.io/npm/v/google-translate-open-api.svg" style="max-width:100%;"></a>
-    <a href="https://www.npmjs.com/package/google-translate-open-api" rel="nofollow"><img src="https://img.shields.io/npm/l/google-translate-open-api.svg?style=flat" style="max-width:100%;"></a>
+    <a href="https://travis-ci.org/hua1995116/google-translate-open-api-proxy"><img src="https://travis-ci.org/hua1995116/google-translate-open-api-proxy.svg?branch=master" /></a>
+    <a href="https://codecov.io/gh/hua1995116/google-translate-open-api-proxy"><img src="https://codecov.io/gh/hua1995116/google-translate-open-api-proxy/branch/master/graph/badge.svg" /></a>
+    <a href="https://npmcharts.com/compare/google-translate-open-api-proxy?minimal=true" rel="nofollow"><img src="https://img.shields.io/npm/dm/google-translate-open-api-proxy.svg" style="max-width:100%;"></a>
+    <a href="https://www.npmjs.com/package/google-translate-open-api-proxy" rel="nofollow"><img src="https://img.shields.io/npm/v/google-translate-open-api-proxy.svg" style="max-width:100%;"></a>
+    <a href="https://www.npmjs.com/package/google-translate-open-api-proxy" rel="nofollow"><img src="https://img.shields.io/npm/l/google-translate-open-api-proxy.svg?style=flat" style="max-width:100%;"></a>
     <a href="https://www.patreon.com/qiufeng"><img src="https://badgen.net/badge/support%20me/donate/ff00ff" alt="Support me"/></a>
 </p>
 
@@ -27,7 +27,7 @@
 # Install
 
 ```shell
-npm install --save google-translate-open-api
+npm install --save google-translate-open-api-proxy
 ```
 
 # Why this repo ？
@@ -45,13 +45,13 @@ Maybe you’ve heard one of them is better for performance. Which one? Many of s
 
 当然用现在已经有的库（像 [google-translate-api](https://github.com/matheuss/google-translate-api)），依然能够实现上述的功能，但是在翻译多段文本时候，需要请求api多次，这严重造成请求的浪费与等待漫长的时间。
 
-因此我需要用一个新的 api 来实现上述功能。`google-translate-open-api`就这样诞生了。
+因此我需要用一个新的 api 来实现上述功能。`google-translate-open-api-proxy`就这样诞生了。
 
 # Usage
 
 单段文本
 ```javascript
-import translate from 'google-translate-open-api';
+import translate from 'google-translate-open-api-proxy';
 const result = await translate(`I'm fine.`, {
   tld: "cn",
   to: "zh-CN",
@@ -63,7 +63,7 @@ const data = result.data[0];
 
 多段文本
 ```javascript
-import translate from 'google-translate-open-api';
+import translate from 'google-translate-open-api-proxy';
 
 const result = await translate([`I'm fine.`, `I'm ok.`], {
   tld: "cn",
@@ -78,7 +78,7 @@ const data = result.data[0];
 多段文本中含有多个句子
 
 ```javascript
-import translate, { parseMultiple } from 'google-translate-open-api';
+import translate, { parseMultiple } from 'google-translate-open-api-proxy';
 
 const result = await translate([`I'm fine. And you?`,`I'm ok.`], {
   tld: "cn",
@@ -127,7 +127,7 @@ const data = result.data[0];
 commonJS
 
 ```javascript
-const translate = require('google-translate-open-api').default;
+const translate = require('google-translate-open-api-proxy').default;
 ```
 
 # API

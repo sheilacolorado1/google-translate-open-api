@@ -1,12 +1,12 @@
-# google-translate-open-api
+# google-translate-open-api-proxy-proxy
 A free and unlimited API for Google Translate（support single text and Multi-segment text） 💵🚫
 
 <p align="center">
-    <a href="https://travis-ci.org/hua1995116/google-translate-open-api"><img src="https://travis-ci.org/hua1995116/google-translate-open-api.svg?branch=master" /></a>
-    <a href="https://codecov.io/gh/hua1995116/google-translate-open-api"><img src="https://codecov.io/gh/hua1995116/google-translate-open-api/branch/master/graph/badge.svg" /></a>
-    <a href="https://npmcharts.com/compare/google-translate-open-api?minimal=true" rel="nofollow"><img src="https://img.shields.io/npm/dm/google-translate-open-api.svg" style="max-width:100%;"></a>
-    <a href="https://www.npmjs.com/package/google-translate-open-api" rel="nofollow"><img src="https://img.shields.io/npm/v/google-translate-open-api.svg" style="max-width:100%;"></a>
-    <a href="https://www.npmjs.com/package/google-translate-open-api" rel="nofollow"><img src="https://img.shields.io/npm/l/google-translate-open-api.svg?style=flat" style="max-width:100%;"></a>
+    <a href="https://travis-ci.org/hua1995116/google-translate-open-api-proxy-proxy"><img src="https://travis-ci.org/hua1995116/google-translate-open-api-proxy-proxy.svg?branch=master" /></a>
+    <a href="https://codecov.io/gh/hua1995116/google-translate-open-api-proxy-proxy"><img src="https://codecov.io/gh/hua1995116/google-translate-open-api-proxy-proxy/branch/master/graph/badge.svg" /></a>
+    <a href="https://npmcharts.com/compare/google-translate-open-api-proxy-proxy?minimal=true" rel="nofollow"><img src="https://img.shields.io/npm/dm/google-translate-open-api-proxy-proxy.svg" style="max-width:100%;"></a>
+    <a href="https://www.npmjs.com/package/google-translate-open-api-proxy-proxy" rel="nofollow"><img src="https://img.shields.io/npm/v/google-translate-open-api-proxy-proxy.svg" style="max-width:100%;"></a>
+    <a href="https://www.npmjs.com/package/google-translate-open-api-proxy-proxy" rel="nofollow"><img src="https://img.shields.io/npm/l/google-translate-open-api-proxy-proxy.svg?style=flat" style="max-width:100%;"></a>
     <a href="https://www.patreon.com/qiufeng"><img src="https://badgen.net/badge/support%20me/donate/ff00ff" alt="Support me"/></a>
 </p>
 
@@ -27,7 +27,7 @@ A free and unlimited API for Google Translate（support single text and Multi-se
 # Install
 
 ```shell
-npm install --save google-translate-open-api
+npm install --save google-translate-open-api-proxy-proxy
 ```
 
 # Why this repo ？
@@ -45,13 +45,13 @@ I don't want to translate all the text first and I'd like to translate segment b
 
 In the existing library, if I want to translate multi-segment text, I have to request multiple times.(like [google-translate-api](https://github.com/matheuss/google-translate-api))
 
-So I have to use the new api to implement, so the `google-translate-open-api` is born.
+So I have to use the new api to implement, so the `google-translate-open-api-proxy-proxy` is born.
 
 # Usage
 
 Single segment
 ```javascript
-import translate from 'google-translate-open-api';
+import translate from 'google-translate-open-api-proxy-proxy';
 const result = await translate(`I'm fine.`, {
   tld: "cn",
   to: "zh-CN",
@@ -63,7 +63,7 @@ const data = result.data[0];
 
 Multi-segment text
 ```javascript
-import translate from 'google-translate-open-api';
+import translate from 'google-translate-open-api-proxy-proxy';
 
 const result = await translate([`I'm fine.`, `I'm ok.`], {
   tld: "cn",
@@ -78,7 +78,7 @@ const data = result.data[0];
 Multi-segment text contains mylti-sentence.
 
 ```javascript
-import translate, { parseMultiple } from 'google-translate-open-api';
+import translate, { parseMultiple } from 'google-translate-open-api-proxy-proxy';
 
 const result = await translate([`I'm fine. And you?`,`I'm ok.`], {
   tld: "cn",
@@ -127,7 +127,7 @@ const data = result.data[0];
 For commonJS
 
 ```javascript
-const translate = require('google-translate-open-api').default;
+const translate = require('google-translate-open-api-proxy-proxy').default;
 ```
 
 # API
